@@ -1,26 +1,30 @@
+
+//Not in use
 const Calendar = () => {
   const tableStyle = {
-    width: '20%',
-    borderCollapse: 'collapse'
+    width: "20%",
+    borderCollapse: "collapse",
   };
 
   const headerStyle = {
-    border: '1px solid black',
-    textAlign: 'center',
-    colSpan: 7
+    border: "1px solid black",
+    textAlign: "center",
+    colSpan: 7,
   };
 
   const cellStyle = {
-    border: '1px solid black',
-    textAlign: 'center',
-    width: '14%'
+    border: "1px solid black",
+    textAlign: "center",
+    width: "14%",
   };
 
   return (
     <table style={tableStyle}>
       <thead>
         <tr>
-          <th colSpan={7} style={headerStyle}>August 2024</th>
+          <th colSpan={7} style={headerStyle}>
+            August 2024
+          </th>
         </tr>
       </thead>
       <tbody>
