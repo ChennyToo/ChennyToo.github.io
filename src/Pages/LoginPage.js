@@ -14,6 +14,22 @@ const LoginPage = () => {
     { marginLeft: "70%" },
   ];
 
+  const textFeildStyle = {
+    color: "white",
+
+  }
+
+  const buttonStyle = {
+    backgroundColor: "#FFA500",
+    color: "white",
+    fontSize: "16px",
+    height: "40px",
+    width: "70%",
+    outline: "1px solid black",
+    borderRadius: "12px",
+    marginTop: "10%",
+  };
+
   return (
     <div
       style={{
@@ -34,6 +50,7 @@ const LoginPage = () => {
           borderRadius: "12px",
           overflow: "hidden",
           position: "relative",
+          zIndex: 1,
         }}
       >
         {stripSeries.map((strip, index) => (
@@ -42,6 +59,17 @@ const LoginPage = () => {
             style={{ ...stripStyle, marginLeft: strip.marginLeft }}
           ></div>
         ))}
+        <form style={{display:'flex', flexDirection: 'column', width:'50%',marginLeft:"25%", alignItems:'center',justifyContent:'center', zIndex:2, position:"relative"}}>
+  <label htmlFor="username" style={{...textFeildStyle, paddingTop:'20%'}}>Username:</label>
+  <input type="text" id="username" name="username" style={{width:'100%'}} />
+  <label htmlFor="pwd" style={{...textFeildStyle, paddingTop:'10%'}}>Password:</label>
+  <input type="password" id="pwd" name="pwd" style={{width:'100%'}} />
+  <button style={buttonStyle}>
+      Log In
+    </button>
+</form>
+
+
       </div>
     </div>
   );
