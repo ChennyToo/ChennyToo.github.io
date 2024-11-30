@@ -7,7 +7,7 @@ const MealPlan = () => {
   const [dateStart, setDateStart] = useState(
     new Date().toISOString().split("T")[0]
   );
-  const [dateEnd, setDateEnd] = useState("2024-12-09");
+  const [dateEnd, setDateEnd] = useState("2024-12-18");
   const [onTrack, setOnTrack] = useState(true);
   const [results, setResults] = useState({
     daily: "",
