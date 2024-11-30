@@ -6,7 +6,7 @@ const Header = () => {
         backgroundColor: 'orange',
         paddingLeft: '16px',
         paddingRight: '16px',
-        height: '100px',
+        height: '70px',
         position: 'relative',
         overflow: 'hidden',
       };

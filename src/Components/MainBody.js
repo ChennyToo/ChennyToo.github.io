@@ -1,8 +1,8 @@
 import PlanDropdowns from "./MainBodyComponents/PlanDropdowns";
-
+//Currently not used
 const MainBody = () => {
     const mainBodyStyle = {
-      backgroundColor: 'black',
+      backgroundColor: '#292322',
       height: '100vh',
     };
   

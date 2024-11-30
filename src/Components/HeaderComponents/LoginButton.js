@@ -1,5 +1,13 @@
-const LoginButton = () => {
+import { useNavigate } from 'react-router-dom';
 
+
+const LoginButton = () => {
+    const nav = useNavigate();
+
+
+    const loginButtonClicked = () => {
+        nav('/login');
+    };
     const buttonStyle = {
         backgroundColor: '#FFA500',
         color: 'white',
@@ -10,7 +18,7 @@ const LoginButton = () => {
         borderRadius: '12px',
       };
   return (
-    <button style={buttonStyle}>
+    <button style={buttonStyle} onClick={loginButtonClicked}>
       Log In
     </button>
   );
